@@ -374,7 +374,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4f9fc;
+  background-color: #121212;
 }
 
 .section-title {
@@ -881,10 +881,10 @@ section {
   padding-bottom: 80px;
 }
 .contact .info-box {
-  color: #444444;
-  background: #fff;
+  color: #ffffff;
+  background: #67b0d1;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(3, 209, 209, 0.932);
   padding: 20px 0 30px 0;
 }
 .contact .info-box i {
@@ -907,14 +907,14 @@ section {
   margin-bottom: 0;
 }
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(3, 209, 209, 0.932);
   padding: 30px;
-  background: #fff;
+  background: #42baf1;
 }
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
-  background: #ed3c0d;
+  color: rgb(233, 12, 12);
+  background: #000000;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -932,7 +932,7 @@ section {
 }
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: rgb(0, 0, 0);
   text-align: center;
   padding: 15px;
 }
@@ -944,7 +944,7 @@ section {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-top-color: rgb(0, 0, 0);
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -963,14 +963,14 @@ section {
   padding: 12px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #67b0d1;
+  background: #000000;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   transition: 0.4s;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #8ec4dd;
+  background: #0dc4a5;
 }
 @-webkit-keyframes animate-loading {
   0% {
