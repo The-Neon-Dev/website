@@ -26,6 +26,7 @@
     <!--CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
+
   </head>
 <body style="background-color: #121212;">
 
@@ -83,26 +84,27 @@
           
 
           <div class="col-md-8  ">
-            <form  method="post" role="form" class="php-email-form">
+            <form  action="https://api.web3forms.com/submit" method="post"  class="email-form">
+              
+              <input type="hidden" name="apikey" value="3ccc0ac6-bb37-4a5a-ae62-5e3f9e2678a1">
+
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name"  id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email"  name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea  name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
