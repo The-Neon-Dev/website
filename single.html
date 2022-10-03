@@ -28,9 +28,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
-	<div class="boxed-page">
-		<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+	<div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	
+	<div class="sidenav-content">
+		<p>
+			Kuncen WB1, Wirobrajan 10010, DIY
+		</p>
+		<p>
+			<span class="fs-16 primary-color">(+68) 120034509</span>
+		</p>
+		<p>info@yourdomain.com</p>
+	</div>
+</div>	<div id="side-search" class="sidenav">
+	<a href="javascript:void(0)" id="side-search-close">&times;</a>
+	<div class="sidenav-content">
+		<form action="">
+
+			<div class="input-group md-form form-sm form-2 pl-0">
+			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+			  <div class="input-group-append">
+			    <button class="input-group-text red lighten-3" id="basic-text1">
+			    	<span class="lnr lnr-magnifier"></span>
+			    </button>
+			  </div>
+			</div>
+
+		</form>
+	</div>
+	
+</div>	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center text-white" href="/">
             <h3 class="font-weight-bolder mb-0">ROXY</h3>
@@ -94,80 +122,31 @@
 		</form>
 	</div>
 	
-</div>		<div class="jumbotron jumbotron-single d-flex align-items-center" style="background-image: url(img/bg.jpg)">
+</div>	<div class="jumbotron jumbotron-single d-flex align-items-center" style="background-image: url(img/blog-1.jpg)">
   <div class="container text-center">
-    <h1 class="display-2 mb-4">Contact Me</h1>
+    <h1 class="display-2 mb-4">Single Blog</h1>
   </div>
-</div>		<!-- Contact Form Section -->
-<section id="contact-form" class="bg-white">
+</div>	<!-- Contact Form Section -->
+<section id="single-content" class="bg-white">
     <div class="container">
-        <div class="section-content">
-            <!-- Section Title -->
-            <div class="title-wrap" data-aos="fade-up">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-sub-title">Get in touch by submitting the below form :D</p>
-            </div>
-            <!-- End of Section Title -->
+        <div class="section-content blog-content">
+            
             <div class="row">
-                <!-- Contact Form Holder -->
-                <div class="col-md-8 offset-md-2 contact-form-holder mt-4" data-aos="fade-up">
-                    <form method="post" name="contact-us" action="">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                <!-- Single Content Holder -->
+                <div class="col-md-8 offset-md-2 mt-4">
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                    <img class="float-left" width="320px" src="img/blog-4.jpg" alt="">
+                    <p>Consectetur adipisicing elit. Sint, corrupti deleniti, rem mollitia quam cum quo, animi ipsa praesentium officiis ducimus! Modi aperiam, nulla ipsum, totam natus consequuntur fugiat blanditiis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste harum, ut magni cupiditate. Nihil ipsum debitis voluptates voluptate illum consectetur sapiente dolorem facilis, eum nobis sequi eveniet assumenda vel voluptatem!</p>
+                    <p>Consectetur adipisicing elit. Sint, corrupti deleniti, rem mollitia quam cum quo, animi ipsa praesentium officiis ducimus! Modi aperiam, nulla ipsum, totam natus consequuntur fugiat blanditiis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste harum, ut magni cupiditate. Nihil ipsum debitis voluptates voluptate illum consectetur sapiente dolorem facilis, eum nobis sequi eveniet assumenda vel voluptatem!</p>
                 </div>
                 <!-- End of Contact Form Holder -->
             </div>
         </div>
-        <div class="section-content pt-0">
-            <div class="title-wrap" data-aos="fade-up">
-                <h2 class="section-title">Where To Find Me?</h2>
-            </div>
-            <div class="row text-center mt-4">
-                <div class="col-md-3" data-aos="fade-up">
-                    <span class="lnr lnr-location fs-40 py-4 d-block"></span>
-                    <h5>LOCATION</h5>
-                    <p>Yogyakarta</p>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-                    <span class="lnr lnr-clock fs-40 py-4 d-block"></span>
-                    <h5>WORKING TIME</h5>
-                    <p>Monday - Saturday</p>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-                    <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
-                    <h5>CALL ME</h5>
-                    <p>123-45678</p>
-                </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
-                    <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
-                    <h5>EMAIL</h5>
-                    <p>theneondev@gmail.com</p>
-                </div>
-
-            </div>
-        </div>
     </div>
 </section>
-<!-- End of Contact Form Section -->		<!-- Features Section-->
+<!-- End of Contact Form Section -->	<!-- Features Section-->
 <section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
@@ -177,21 +156,22 @@
         </div>
     </div>
 </section>
-<!-- End of Features Section-->		<footer class="mastfoot my-3">
+<!-- End of Features Section--></div>
+<footer class="mastfoot my-3">
     <div class="inner container">
          <div class="row">
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
          		
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2022 The Neon Dev.</p>
+         		          		<p class="mx-auto text-center mb-0">&copy; 2022 The Neon Dev.</p>
          	</div>
+           
+            
+            
         </div>
     </div>
-</footer>	</div>
-	
-</div>
-	<!-- External JS -->
+</footer>	<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
