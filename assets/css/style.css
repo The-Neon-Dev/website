@@ -481,12 +481,15 @@ section {
   line-height: 1;
   color: #67b0d1;
   transition: all 0.3s ease-in-out;
+
 }
 .services .title {
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
 }
+
 .services .title a {
   color: #111;
 }
@@ -501,6 +504,7 @@ section {
 .services .icon-box:hover .icon i {
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # Counts
@@ -880,6 +884,26 @@ section {
 .contact {
   padding-bottom: 80px;
 }
+
+.col-md-6{
+  margin:auto;
+}
+
+.col-md-8{
+  margin:auto;
+}
+
+.text-center{
+  border-radius: 10px;
+}
+
+.form-group imput{
+  width:200px;
+}
+
+#contact{
+  background-image:linear-gradient(blue,black) ;
+}
 .contact .info-box {
   color: #ffffff;
   background: #67b0d1;
@@ -949,9 +973,12 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 .contact .email-form input, .contact .email-form textarea {
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: none;
   font-size: 14px;
+  width:455px;
+  margin:auto;
+  margin-left: 152px;
 }
 .contact .email-form input::focus, .contact .email-form textarea::focus {
   background-color: #67b0d1;
@@ -964,13 +991,14 @@ section {
 }
 .contact .email-form button[type=submit] {
   background: #000000;
-  border: 0;
+  border-radius: 10px;
   padding: 10px 24px;
   color: rgb(255, 255, 255);
   transition: 0.4s;
 }
 .contact .email-form button[type=submit]:hover {
   background: #0dc4a5;
+  border-radius: 10px;
 }
 @-webkit-keyframes animate-loading {
   0% {
