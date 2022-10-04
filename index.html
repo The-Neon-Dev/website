@@ -1,160 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>The Neon Dev</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>The Neon Dev</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--Firebase-->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
 
-  <!--Firebase-->
-  <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 
-    // Import the functions you need from the SDKs you need
-  
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-  
-    // TODO: Add SDKs for Firebase products that you want to use
-  
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-  
-    // Your web app's Firebase configuration
-  
-    const firebaseConfig = {
-  
-      apiKey: "AIzaSyDTXbR_xvCGrvtgeRg3hHwX59b7pXqy2RE",
-  
-      authDomain: "the-neon-dev.firebaseapp.com",
-  
-      projectId: "the-neon-dev",
-  
-      storageBucket: "the-neon-dev.appspot.com",
-  
-      messagingSenderId: "717816484862",
-  
-      appId: "1:717816484862:web:833ba2d1f65621cb04e6af"
-  
-    };
-  
-  
-    // Initialize Firebase
-  
-    const app = initializeApp(firebaseConfig);
-  
-  </script>
+      // TODO: Add SDKs for Firebase products that you want to use
 
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  <!--CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/custom.css">
-</head>
+      // Your web app's Firebase configuration
 
-<body style="background-color: #121212;">
+      const firebaseConfig = {
+        apiKey: "AIzaSyDTXbR_xvCGrvtgeRg3hHwX59b7pXqy2RE",
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
+        authDomain: "the-neon-dev.firebaseapp.com",
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>The Neon Dev</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+        projectId: "the-neon-dev",
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Products</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        storageBucket: "the-neon-dev.appspot.com",
 
-    </div>
-  </header><!-- End Header -->
+        messagingSenderId: "717816484862",
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <h1>Welcome to My Website!</h1>
-      <h2 style="color: black;">Its me Roshan!</h2>
-      <a href="#services" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
-    </div>
-  </section><!-- End Hero -->
+        appId: "1:717816484862:web:833ba2d1f65621cb04e6af",
+      };
 
-  <main id="main">
+      // Initialize Firebase
 
-   
-<!-- ======= Services Section ======= -->
-<section id="services" class="services">
-  <div class="container">
+      const app = initializeApp(firebaseConfig);
+    </script>
 
-    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-      <h2>Services</h2>
-      <p id="sub-title">Click icon to know more</p>
-    </div>
+    <!--CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
 
-    <div class="row">
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up">
-          <a href="services/webdesign.html">
-          <div class="icon"><i class="bi bi-laptop"></i></div>
-          <h4 class="title"><a href="">Web Designing</a></h4>
-          <p class="description">Static websites and NodeJS web apps using Firebase,MongoDB! </p>
-          </a>
+  <body style="background-color: #121212">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-transparent">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light">
+            <a href="index.html"><span>The Neon Dev</span></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bi bi-phone"></i></div>
-          <h4 class="title"><a href="">Mobile App</a></h4>
-          <p class="description">Android apps made with flutter</p>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio">Products</a></li>
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container" data-aos="fade-up">
+        <h1>Welcome to My Website!</h1>
+        <h2 style="color: black">Its me Roshan!</h2>
+        <a href="#services" class="btn-get-started scrollto"
+          ><i class="bx bx-chevrons-down"></i
+        ></a>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Services</h2>
+            <p id="sub-title">Click icon to know more</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-space-between justify-content-center mw-50 mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up">
+                <a href="./services/webdesign.html">
+                  <div class="icon"><i class="bi bi-laptop"></i></div>
+                  <h4 class="title"><a href="">Web Designing</a></h4>
+                  <p class="description">
+                    Static websites and NodeJS web apps using Firebase,MongoDB!
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-space-between justify-content-center mw-50 mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bi bi-phone"></i></div>
+                <h4 class="title"><a href="">Mobile App</a></h4>
+                <p class="description">Android apps made with flutter</p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-0 col-lg-3 d-flex align-items-space-between justify-content-center mw-50 mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bi-robot"></i></div>
+                <h4 class="title"><a href="">Bot</a></h4>
+                <p class="description">
+                  simple Telegram bots, whatsapp user bot, implementing chatbot
+                  on websites!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-space-between justify-content-center mw-50 mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bi bi-gear"></i></div>
+                <h4 class="title"><a href="">OTHER</a></h4>
+                <p class="description">Other services</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <!-- End Services Section -->
 
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon"><i class="bi-robot"></i></div>
-          <h4 class="title"><a href="">Bot</a></h4>
-          <p class="description">simple Telegram bots, whatsapp user bot, implementing chatbot on websites!</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="bi bi-gear"></i></div>
-          <h4 class="title"><a href="">OTHER</a></h4>
-          <p class="description">Other services</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Services Section -->
-
-    <!-- ======= Products Section ======= -->
-    <!--  Commented until product release
+      <!-- ======= Products Section ======= -->
+      <!--  Commented until product release
     <section id="portfolio" class="portfolio">
       <div class="container">
 
@@ -269,21 +288,97 @@
         </div>
 
       </div>
-    </section> --> <!-- End Products Section -->
+    </section> -->
+      <!-- End Products Section -->
+    </main>
+    <!-- End #main -->
 
-  
 
-  </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          <h5 style="color: black"><a href="contact.html">Contact</a></h5>
+          &copy; Copyright <strong><span>The Neon Dev</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
+  <!-- <footer id="footer"> -->
+    <!-- <div class="container">
       <div class="copyright">
         <h5 style="color: black;"><a  href="contact.html">Contact</a></h5>
         &copy; Copyright <strong><span>The Neon Dev</span></strong>. All Rights Reserved
       </div>
-    </div>
-  </footer><!-- End Footer -->
+    </div> -->
+    <footer>
+        <div class="text-center" style="color: #fd7014; padding-top: 30px; font-weight: 800;">
+            <p style="font-size: 20px;"></p>
+        </div>
+        <div class="main-content">
+            <div class="about" style="margin-top: 20px;">
+                <h4 class="heading footer-content text-center">The Neon Dev</h4>
+                <br />
+                <p class="footer-content text">The Neon Dev is the Community of Coding Enthusiasts, Where we Share
+                    Resources, Roadmaps and Opportunities Updates to explore technologies.</p>
+            </div>
+
+            <div class="quick-links footer-content" style="margin-top: 20px;">
+                <h4 class="heading">Quick Navigate</h4>
+                <br />
+                <li><a href="#" class="text"> Home </a></li>
+                <li><a href="#services" class="text"> Services </a></li>
+                <li><a href="#portfolio" class="text"> Products</a></li>
+                <li><a href="contact.html" class="text"> Contacts</a></li>
+            </div>
+
+            <div class="contact-details footer-content" style="margin-top: 20px;">
+                <!-- <h4 class="heading text-center">Contact</h4>
+                <br />
+                <li class="text"><i class="bi bi-geo-alt-fill"></i><span> Patna, India</span></li>
+                <li class="text"><i class="bi bi-envelope-paper"></i><span> codechampcommunity@gmail.com</span></li> -->
+
+                <div class="social">
+                    <h4>Connect with me</h3>
+                    <!-- Add font awesome icons -->
+                    <a href="" class="fa1 fa-linkedin"><i class="bi bi-linkedin soc1" style="font-size:30px;"></i></a>
+                    <a href="" class="fa1 fa-telegram"><i class="bi bi-telegram soc1" style="font-size:30px;"></i></a>
+                    <a href="" class="fa1 fa-instagram"><i class="bi bi-instagram soc1" style="font-size:30px;"></i></a>
+                    <a href="" class="fa1 fa-discord"><i class="bi bi-discord soc1" style="font-size:30px;"></i></a>
+                    <a href="" class="fa1 fa-youtube"><i class="bi bi-youtube soc1" style="font-size:30px;"></i></a>
+                    <a href="" class="fa1 fa-github"><i class="bi bi-github soc1" style="font-size:30px;"></i></a>
+                   </div>
+            </div>
+        </div>
+        <div class="copyright-content" style="color: white;">
+            <p>Copyright © 2022 <a href="#">The Neon Dev</a> All Rights Reserved</p>
+        </div>
+        <br />
+    </footer>
+  <!-- </footer>End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -302,3 +397,4 @@
 </body>
 
 </html>
+

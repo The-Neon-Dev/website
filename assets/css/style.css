@@ -1128,10 +1128,242 @@ section {
   }
 }
 
+
 .box{
   padding: 7px;
   margin-left: 250px;
 }
 #name,#email,#subject{
  width: 7cm;
+
+footer {
+  background-image: linear-gradient(rgb(7, 34, 79),black);
+  bottom: 0;
+}
+
+.footer-content {
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.about {
+  max-width: 30%;
+}
+
+.quick-links > li,
+.contact-details > li {
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+}
+
+.text {
+  color: #b3b3b3;
+}
+
+.quick-links > li > a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.quick-links > li > a:hover {
+  color: #fd7014;
+}
+
+.copyright-content {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.copyright-content > p > a {
+  color: #fd7014;
+  text-decoration: none;
+}
+/* Toggle Switch styling starts here */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 44px;
+  height: 20px;
+  background-color:white;
+  border: 0.8px solid #4C4C4C;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border: 1px solid #4C4C4C;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.bi-moon {
+  color: black;
+}
+
+.bi-sun {
+  color: white;
+}
+/* Toggle Switch styling ends here */
+
+/* dark mode styling starts here */
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+.dark-nav{
+  background-color: black;
+}
+.dark-anchor-tag{
+  color: white;
+}
+.dark-card{
+  background-color: #121212;
+}
+.dark-card-2{
+  background-color: black;
+}
+/* dark mode styling ends here */
+
+.WhyToJoin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 601px) and (max-width: 604px){
+  .WeOffers ul {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .WhyToJoin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .WhyToJoin > .image {
+    display: none;
+  }
+
+  .mobile-view > li {
+    font-size: small;
+    line-height: 15px;
+    margin-top: 18px;
+  }
+
+  .accordion {
+    width: 90% !important;
+    margin: auto;
+  }
+
+  .contact-us-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .about {
+    max-width: 80%;
+  }
+}
+
+.social{
+  margin-top: 50px;
+  padding:5px;
+}
+
+.social h4{
+  font-family: "Raleway", sans-serif;
+  text-align: center!important;
+}
+
+.fa:hover {
+  opacity: 0.9;
+  color:#fd7014;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-linkedin:hover{
+  color:#fd7014;
+}
+
+.fa-discord {
+  color: white;
+}
+
+.fa-discord:hover{
+  color: #fd7014;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-youtube:hover{
+  color:#fd7014;
+}
+.fa-telegram {
+  color: white;
+}
+
+.fa-telegram:hover{
+  color:#fd7014;
+}
+
+.fa-github {
+  color: white;
+}
+
+.fa-github:hover{
+  color:#fd7014;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-instagram:hover{
+  color:#fd7014;
+}
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 20px;
+    text-decoration: none;
+    margin: 5px 20px;
+}
+
+.soc1{
+  padding:5px;
+
 }
