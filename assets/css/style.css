@@ -892,7 +892,7 @@ section {
   color: #67b0d1;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f0f7fa;
+  border: 2px dotted #011017;
 }
 .contact .info-box h3 {
   font-size: 20px;
@@ -961,6 +961,8 @@ section {
 }
 .contact .email-form textarea {
   padding: 12px 15px;
+  border-color: #000000;
+  border-width: 1.5px;
 }
 .contact .email-form button[type=submit] {
   background: #000000;
@@ -1125,6 +1127,14 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
+
+.box{
+  padding: 7px;
+  margin-left: 250px;
+}
+#name,#email,#subject{
+ width: 7cm;
 
 footer {
   background-image: linear-gradient(rgb(7, 34, 79),black);
@@ -1355,4 +1365,5 @@ footer {
 
 .soc1{
   padding:5px;
+
 }
